@@ -22,7 +22,9 @@ Because m is given as double , we should * 100 to make int and + 0.5 before cast
 
 After that from the first item, checking if it is possible to have that item and if we can , find (current money - that item's price) + that item's calorie  vs the max calorie until now.
 
-At first , I make malloc because we don't know the length of dp. However, if we do malloc and free, it takes some time to do that so it does not work properly.
+At first , I use malloc because we don't know the length of dp. However, if we do malloc and free, it takes some time to do that so it does not work properly.
+
+After that I use memset to reset the dp.
 
 ## Where can I get more help, if I need it?
 
